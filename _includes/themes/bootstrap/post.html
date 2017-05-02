@@ -1,0 +1,118 @@
+<div id="fullpage">
+  <div class="section" id="section0">
+    <div style="background-size: cover; background-image:url('{{ BASE_PATH }}/assets/img/{% if page.img %}{{ page.img }}{% else %}generic.jpg{% endif %}')" class="slide">       
+        <div class="jumbotronic" style="text-align: center">
+          <h1 class="heavy">{{ page.title }}</h1>
+          {% if page.tagline %} <h2 class="heavy">{{ page.tagline }}</h2>{% endif %}
+        </div>
+    </div>        
+  </div>
+ </div>
+
+{% include themes/bootstrap/nav-bar.html %}
+<br />
+<br />
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main post">
+          <br />
+          <a name="video"></a>
+          <h2>The Video</h2>
+
+          <div style="overflow:hidden;height:500px;width:100%;max-width:100%;max-height:100%;"><div id="youtube_canvas" style="height:100%;width:100%;max-width:100%"><iframe style="height:100%;width:100%;max-width:100%;border:0;" frameborder="0" src="{{page.video_url}}"></iframe></div><style>#youtube_canvas img{max-width:none!important;background:none!important}</style></div>
+
+          <a name="pictures"></a>
+          <h2>The Pictures</h2>
+          {% for picture in page.pictures %}
+            <img src='{{ BASE_PATH }}/assets/images/{{picture[0]}}' width="100%">
+            <p class="legend">{{picture[1]}}</p>
+          {% endfor %}
+
+          <a name="context"></a>
+          <h2>The Context</h2>
+           {{ content }}
+          <br />
+          <div class="row">
+
+            <div class="col-sm-6">
+            
+               {% include social-share.html %} 
+
+            </div>
+          </div>         
+        </div>
+        <div class="col-sm-3 offset-sm-1 blog-sidebar affix">
+          {% include side-bar.html %}
+        </div>
+      </div>
+
+
+
+        <div class="row">   
+          {% if page.previous %}       
+          <div class="col-sm-6"  style="text-align: center;">
+            <h4>Previous article</h4>
+              <div>
+                <h5><a class="" href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; {{ page.previous.title }}<span data-letters="&larr; {{ page.previous.title }}"></span><span data-letters="&larr; {{ page.previous.title }}"></span></a></h5>
+              </div>
+          </div>
+          {% endif %}
+          {% if page.next %}
+          <div class="col-sm-6"  style="text-align: center;">
+            <h4>Next article</h4>
+                <div>
+                    <h5><a style="margin: 0 auto;" class="" href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title }} &rarr;<span data-letters="{{ page.next.title }} &rarr;"></span><span data-letters="{{ page.next.title }} &rarr;"></span></a></h5>
+                  
+                </div>
+          </div>
+          {% endif %}
+        </div>
+
+    </div>
+
+
+          <!-- FULL SCREEN MODAL SUBMIT open/close -->
+      <div class="overlay overlay-hugeinc">
+        <button type="button" class="overlay-close">Close</button>
+
+        <nav>
+          <form action="//altervista.us8.list-manage.com/subscribe/post?u=a36bd3e356847dab838227fce&amp;id=3c63d825b2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <ul>
+            <li>
+              <label>Name</label>
+            </li>
+            <li>
+              <input class="span11" type="text" name="FNAME" id="first_name" placeholder="Jonathan">
+            </li>
+            <li>
+              <label>Email</label>
+            </li>
+            <li>
+              <input class="span11" type="text" id="email" name="EMAIL" placeholder="jon@doe.com">
+            </li>
+            <li>
+              <input class="cbp-mc-submit" type="submit" value="Invia" name="subscribe" />
+            </li>
+          </ul>
+        </form>
+        </nav>
+
+      </div>
+
+
+
+
+
+
+
+     
+
+
+
+
+
+
+
