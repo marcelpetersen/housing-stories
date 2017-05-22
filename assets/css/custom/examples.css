@@ -981,5 +981,29 @@ color: #95be7d;
 }
 
 .intro-lead {
-  
+  color: #fff;
+  width: 60%;
+  text-align: center;
+  margin: 45px auto;
+  font-size: 1.5em;
+}
+
+.intro-lead a {
+    color : #fff;
+    text-decoration: none;
+  }
+
+.nav-submenu {
+  background-color: #292b2c !important;
+  padding: 10px !important;
+}
+
+.nav-submenu-title {
+  font-size: .75em;
+  color: #fff;
+  border-bottom: 1px solid #999;
+}
+
+.submenu {
+  font-size: .8em
 }
