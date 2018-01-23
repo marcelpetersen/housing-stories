@@ -16,7 +16,7 @@ post_limit: 5
 title : Housing Stories
 tagline: "In every metropolis, inequalities are on the rise. Housing Stories explores housing inequalities in Paris, Sao Paulo and Ho Chi Minh City."
 
-production_url : http://housingstories.jplusplus.org
+production_url : https://marcelpetersen.github.io/housing-stories
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
