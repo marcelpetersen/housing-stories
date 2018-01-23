@@ -7,7 +7,7 @@ highlighter: false
 markdown: kramdown
 extensions: [fenced_code_blocks]
 excerpt_separator: "<!--more-->"
-url: 
+url: https://marcelpetersen.github.io/housing-stories
 baseurl: "/housing-stories" # the subpath of your site, e.g. /blog/
 
 post_limit: 5
