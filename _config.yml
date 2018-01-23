@@ -7,7 +7,7 @@ highlighter: false
 markdown: kramdown
 extensions: [fenced_code_blocks]
 excerpt_separator: "<!--more-->"
-url: http://housingstories.jplusplus.org
+url: 
 baseurl: "/"
 
 post_limit: 5
