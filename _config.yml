@@ -7,7 +7,7 @@ highlighter: false
 markdown: kramdown
 extensions: [fenced_code_blocks]
 excerpt_separator: "<!--more-->"
-url: https://marcelpetersen.github.io/housing-stories
+
 baseurl: "/housing-stories" # the subpath of your site, e.g. /blog/
 
 post_limit: 5
@@ -16,7 +16,7 @@ post_limit: 5
 title : Housing Stories
 tagline: "In every metropolis, inequalities are on the rise. Housing Stories explores housing inequalities in Paris, Sao Paulo and Ho Chi Minh City."
 
-production_url : 
+
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
