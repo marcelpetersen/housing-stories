@@ -8,7 +8,7 @@ markdown: kramdown
 extensions: [fenced_code_blocks]
 excerpt_separator: "<!--more-->"
 url: https://marcelpetersen.github.io/housing-stories
-baseurl: "/"
+
 
 post_limit: 5
 
