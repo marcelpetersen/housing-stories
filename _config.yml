@@ -8,7 +8,7 @@ markdown: kramdown
 extensions: [fenced_code_blocks]
 excerpt_separator: "<!--more-->"
 url: 
-baseurl: "/"
+baseurl: 
 
 post_limit: 5
 
